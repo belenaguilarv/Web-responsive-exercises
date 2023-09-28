@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <!-- Page title -->
+    <h1 id="title">Survey Form</h1>
+
+    <!-- Brief Description -->
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    
+    <!-- Main form -->
+    <form id="survey-form">
+        <!-- Name input field -->
+        <label class="title" for="name" id="name-label">Name</label>
+        <input id="name" type="text" name="name" required>
+        <p class="instruction">Enter your full name</p>
+
+        <!-- Email input field -->
+        <label class="title" for="email" id="email-label">Email</label>
+        <input id="email" type="email" name="email" required>
+        <p class="instruction">Enter your email</p>
+        
+        <!-- Age input field -->
+        <label class="title" for="number" id="number-label">Age</label>
+        <input id="number" type="number" name="number" min="1" max="100">
+        <p class="instruction">(optional)</p>
+
+        <!-- Radio button group -->
+        <fieldset>
+            <legend>Would you recommend this page to a friend?</legend>
+            <input type="radio" id="Definitely" name="radio-group" value="opcion1">
+            <label for="Definitely">Definitely</label>
+        
+            <input type="radio" id="Maybe" name="radio-group" value="opcion2">
+            <label for="Maybe">Maybe</label>
+                    
+            <input type="radio" id="Not-sure" name="radio-group" value="opcion3">
+            <label for="Not-sure">Not sure</label>
+        </fieldset>
+        
+        <!-- Dropdown menu (select) -->
+        <label class="title" for="dropdown" id="dropdown-label">What is your favorite feature?</label>
+        <select id="dropdown" name="dropdown">
+            <option value="" disabled selected>Select an option</option>
+            <option value="Challenges">Challenges</option>
+            <option value="Projects">Projects</option>
+            <option value="Community">Community</option>
+            <option value="Open-Source">Open Source</option>
+        </select>
+
+        <!-- Checkboxes -->
+        <label class="title">What would you like to see improved? (Check all that apply)</label>
+
+    <div id="options">
+        
+        <div>
+        <input type="checkbox" id="front-end" name="opciones" value="Front-end Projects">
+        <label for="front-end">Front-end Projects</label>
+        </div>
+
+        <div>
+        <input type="checkbox" id="back-end" name="opciones" value="Back-end Projects">
+        <label for="back-end">Back-end Projects</label>
+        </div>
+        
+        <div>
+        <input type="checkbox" id="data-visualization" name="opciones" value="Data Visualization">
+        <label for="data-visualization">Data Visualization</label>
+        </div>
+        
+        <div>
+        <input type="checkbox" id="Challenges-label" name="opciones" value="Challenges">
+        <label for="Challenges-label">Challenges</label>
+        </div>
+
+        <div>
+        <input type="checkbox" id="OpenSourceCommunity" name="opciones" value="Open Source Community">
+        <label for="OpenSourceCommunity">Open Source Community</label>
+        </div>
+
+        <div>
+        <input type="checkbox" id="Gitter-help-rooms" name="opciones" value="Gitter help rooms">
+        <label for="Gitter-help-rooms">Gitter help rooms</label>
+        </div>
+
+        <div>
+        <input type="checkbox" id="videos" name="opciones" value="Videos">
+        <label for="videos">Videos</label>
+        </div>
+
+        <div>
+        <input type="checkbox" id="forum" name="opciones" value="Forum">
+        <label for="forum">Forum</label>
+        </div>
+
+        <div>
+        <input type="checkbox" id="Additional-Courses" name="opciones" value="Additional Courses">
+        <label for="Additional-Courses">Additional Courses</label>
+        </div>
+    </div>
+        <!-- Additional comments (textarea) -->
+        <label class="title" for="comments">Any comments or suggestions?</label>
+        <textarea id="comments" name="comments" rows="4"></textarea>
+        <p class="instruction">Enter your comments here</p>
+
+        <!-- Submission button -->
+        <button type="submit" id="submit" class="button">Submit</button>
+    </form>
+</body>
+</html>
