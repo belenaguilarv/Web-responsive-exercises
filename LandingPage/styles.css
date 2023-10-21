@@ -1,0 +1,130 @@
+html{
+    font-family:'Segoe UI', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+#header {
+    background-color: #f2eb26;
+    height: 50px;
+    max-width: 1640px;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    top: 0; /* Alinea el encabezado en la parte superior */
+    left: 0; /* Alinea el encabezado en la izquierda */
+    right: 0; /* Alinea el encabezado en la derecha */
+}
+#header-img{
+    max-width: 25%;
+}
+
+.nav-link{
+    margin-right: 15px;
+}
+
+#form-div {
+    margin-top: 100px;
+    text-align: center;
+    background-color: beige;
+    border-radius: 5px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-left: auto; /* Centra horizontalmente con margen izquierdo automático */
+    margin-right: auto; /* Centra horizontalmente con margen derecho automático */
+}
+
+.title {
+    display: block;
+    font-size: medium;
+    margin-bottom: 3px;
+    margin-top: 0.6em;
+    font-size: larger;
+}
+.Features-header{
+    color: rgb(247, 58, 25);
+}
+.content {
+    display: flex;
+    flex-direction: column; /* Coloca los elementos verticalmente */
+    margin-bottom: 20px; /* Agrega margen inferior para separar los elementos */
+    text-align: center;
+    justify-content: center;
+}
+.plan-detail{
+    list-style: none; /* Elimina los puntos de la lista */
+    text-align: center;
+}
+#Pricing{
+    flex-direction: row;
+    justify-content: center;
+}
+.plan-div{
+    background-color: #a91212c3;
+    color: white;
+    border-radius: 5px;
+    width: 230px;
+    margin: 10px;
+    padding: 10px;
+}
+
+#footer {
+    background-color: #94949483;
+    height: 50px;
+    max-width: 1640px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    margin-top: 30px; /* Mueve el footer hacia arriba para solapar el espacio en blanco */
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#footer-ul{
+    list-style: none; /* Elimina los puntos de la lista */
+}
+button{
+    font-size: 12px;
+    cursor: pointer;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: thistle;
+    border-style: hidden;
+}
+@media (max-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #Pricing {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #footer {
+        width: 100%; /* Establece el ancho al 100% para que ocupe todo el ancho de la pantalla */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Ajusta el ancho del contenido en el footer para que ocupe todo el ancho */
+    #footer ul {
+        width: 100%;
+    }
+}
